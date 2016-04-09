@@ -34,7 +34,7 @@
           <param name="maven.home" value="" />
           <param name="mavenSelection" value="mavenSelection:default" />
           <param name="pomLocation" value="pom.xml" />
-          <param name="runnerArgs" value="-Pexamples --fail-at-end -pl '!:symmetric-cluster'" />
+          <param name="runnerArgs" value="-Pexamples --fail-at-end -pl '!symmetric-cluster'" />
           <param name="teamcity.coverage.emma.include.source" value="true" />
           <param name="teamcity.coverage.emma.instr.parameters" value="-ix -*Test*" />
           <param name="teamcity.coverage.idea.includePatterns" value="*" />
