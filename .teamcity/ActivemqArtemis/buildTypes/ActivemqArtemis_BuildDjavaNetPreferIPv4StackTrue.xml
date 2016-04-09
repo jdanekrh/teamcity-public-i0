@@ -27,7 +27,7 @@
       <runner id="RUNNER_4" name="Examples" type="Maven2">
         <parameters>
           <param name="goals" value="verify" />
-          <param name="jvmArgs" value="-Xmx1024m -XX:MaxPermSize=512m" />
+          <param name="jvmArgs" value="-Xmx1024m -XX:MaxPermSize=512m -Djava.net.preferIPv4Stack=true" />
           <param name="maven.home" value="" />
           <param name="mavenSelection" value="mavenSelection:default" />
           <param name="pomLocation" value="pom.xml" />
