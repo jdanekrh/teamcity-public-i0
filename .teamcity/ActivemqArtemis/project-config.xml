@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" uuid="f9a6f778-37fc-4a81-a3d5-bbd181d96d02" xsi:noNamespaceSchemaLocation="http://www.jetbrains.com/teamcity/schemas/9.0/project-config.xsd">
+  <name>Activemq Artemis</name>
+  <parameters />
+  <cleanup />
+</project>
+
