@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<build-type xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" uuid="bc5d052b-99ef-47c6-bbc3-15192854dd53" xsi:noNamespaceSchemaLocation="http://www.jetbrains.com/teamcity/schemas/9.0/project-config.xsd">
+  <name>Build -Djava.net.preferIPv4Stack=true</name>
+  <description />
+  <settings>
+    <options>
+      <option name="shouldFailBuildOnOOMEOrCrash" value="false" />
+    </options>
+    <parameters />
+    <build-runners>
+      <runner id="RUNNER_3" name="Install" type="Maven2">
+        <parameters>
+          <param name="goals" value="clean install" />
+          <param name="maven.home" value="" />
+          <param name="mavenSelection" value="mavenSelection:bundledM3_2" />
+          <param name="pomLocation" value="pom.xml" />
+          <param name="runnerArgs" value="-Prelease" />
+          <param name="teamcity.coverage.emma.include.source" value="true" />
+          <param name="teamcity.coverage.emma.instr.parameters" value="-ix -*Test*" />
+          <param name="teamcity.coverage.idea.includePatterns" value="*" />
+          <param name="teamcity.coverage.jacoco.patterns" value="+:*" />
+          <param name="teamcity.step.mode" value="default" />
+          <param name="userSettingsPath" value="" />
+          <param name="userSettingsSelection" value="userSettingsSelection:default" />
+        </parameters>
+      </runner>
+      <runner id="RUNNER_4" name="Examples" type="Maven2">
+        <parameters>
+          <param name="goals" value="verify" />
+          <param name="jvmArgs" value="-Xmx1024m -XX:MaxPermSize=512m" />
+          <param name="maven.home" value="" />
+          <param name="mavenSelection" value="mavenSelection:default" />
+          <param name="pomLocation" value="pom.xml" />
+          <param name="runnerArgs" value="-Pexamples --fail-at-end" />
+          <param name="teamcity.coverage.emma.include.source" value="true" />
+          <param name="teamcity.coverage.emma.instr.parameters" value="-ix -*Test*" />
+          <param name="teamcity.coverage.idea.includePatterns" value="*" />
+          <param name="teamcity.coverage.jacoco.patterns" value="+:*" />
+          <param name="teamcity.step.mode" value="default" />
+          <param name="userSettingsPath" value="" />
+          <param name="userSettingsSelection" value="userSettingsSelection:default" />
+        </parameters>
+      </runner>
+    </build-runners>
+    <vcs-settings>
+      <vcs-entry-ref root-id="ActivemqArtemis_GitGitApacheOrgActivemqArtemisGitRefsHeadsMaster" />
+    </vcs-settings>
+    <requirements />
+    <build-triggers />
+    <cleanup />
+  </settings>
+</build-type>
+
