@@ -34,7 +34,7 @@
           <param name="maven.home" value="" />
           <param name="mavenSelection" value="mavenSelection:default" />
           <param name="pomLocation" value="pom.xml" />
-          <param name="runnerArgs" value="-Pexamples --fail-at-end -pl !:symmetric-cluster,!:colocated-failover-scale-down,!:multiple-failover,!:multiple-failover,!:non-transaction-failover,!:replicated-failback,!:replicated-failback-static,!:replicated-multiple-failover,!:replicated-transaction-failover,!:scale-down pl !:transaction-failover,!:core-bridge,!:browser" />
+          <param name="runnerArgs" value="-Pexamples --fail-at-end -pl !:symmetric-cluster,!:colocated-failover-scale-down,!:multiple-failover,!:multiple-failover,!:non-transaction-failover,!:replicated-failback,!:replicated-failback-static,!:replicated-multiple-failover,!:replicated-transaction-failover,!:scale-down,!:transaction-failover,!:core-bridge,!:browser" />
           <param name="teamcity.coverage.emma.include.source" value="true" />
           <param name="teamcity.coverage.emma.instr.parameters" value="-ix -*Test*" />
           <param name="teamcity.coverage.idea.includePatterns" value="*" />
