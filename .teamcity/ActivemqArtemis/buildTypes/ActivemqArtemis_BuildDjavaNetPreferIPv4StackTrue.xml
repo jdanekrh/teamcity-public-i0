@@ -6,6 +6,9 @@
     <options>
       <option name="shouldFailBuildOnOOMEOrCrash" value="false" />
     </options>
+    <disabled-settings>
+      <setting-ref ref="RUNNER_3" />
+    </disabled-settings>
     <parameters />
     <build-runners>
       <runner id="RUNNER_3" name="Install" type="Maven2">
