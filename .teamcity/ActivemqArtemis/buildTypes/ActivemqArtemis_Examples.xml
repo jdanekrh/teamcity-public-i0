@@ -4,7 +4,17 @@
   <description />
   <settings>
     <parameters />
-    <build-runners />
+    <build-runners>
+      <runner id="RUNNER_1" name="" type="matrix-build-runner">
+        <parameters>
+          <param name="build.type.id" value="bt1" />
+          <param name="matrix.parameters" value="example.name=application-layer-failover,artemis-jms-soak-example,artemis-mqtt-publish-example,auto-closeable,bridge,broker-modules,browser,client-kickoff,client-side-fileoverlistener,client-side-load-balancing,clustered-durable-subscription,clustered-grouping,clustered-jgroups,clustered-queue,clustered-static-discovery,clustered-static-discovery-uri,clustered-static-oneway,clustered-topic,clustered-topic-uri,colocated-failover,colocated-failover-scale-down,completion-listener,consumer-rate-limit,context,core-bridge,dead-letter,delayed-redelivery,divert,dup-send,durable-subscription,embedded,embedded-simple,expiry,ha-policy-autobackup,http-transport,instantiate-connection-factory,interceptor,interceptor-client,javascript-chat,jmx,large-message,last-value-queue,management,management-notifications,message-counters,message-group,message-group2,message-priority,mixed-jms-rest,multiple-failover,multiple-failover-failback,no-consumer-buffering,non-transaction-failover,openwire-perf,paging,pre-acknowledge,producer-rate-limit,proton-ruby,push,queue,queue-message-redistribution,queue-requestor,queue-selector,reattach-node,replicated-failback,replicated-failback-static,replicated-multiple-failover,replicated-transaction-failover,request-reply,scale-down,scheduled-message,security,security-ldap,send-acknowledgements,shared-consumer,spring-integration,static-selector,stomp,stomp-embedded-interceptor,stomp-jms,stomp1.1,stomp1.2,symmetric-cluster,temp-queue,topic,topic-hierarchies,topic-selector1,topic-selector2,transaction-failover,transactional,xa-heuristic,xa-receive,xa-send" />
+          <param name="teamcity.server.url" value="%teamcity.serverUrl%" />
+          <param name="teamcity.step.mode" value="default" />
+          <param name="wait.builds.finish" value="true" />
+        </parameters>
+      </runner>
+    </build-runners>
     <vcs-settings />
     <requirements />
     <build-triggers />
