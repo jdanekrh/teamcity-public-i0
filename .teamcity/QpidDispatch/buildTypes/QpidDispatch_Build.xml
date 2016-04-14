@@ -7,7 +7,7 @@
     <build-runners>
       <runner id="RUNNER_9" name="" type="simpleRunner">
         <parameters>
-          <param name="script.content" value="sh config.sh" />
+          <param name="script.content" value="source config.sh; test.sh" />
           <param name="teamcity.step.mode" value="default" />
           <param name="use.custom.script" value="true" />
         </parameters>
