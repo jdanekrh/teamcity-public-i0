@@ -8,6 +8,14 @@
     </options>
     <parameters />
     <build-runners>
+      <runner id="RUNNER_8" name="Tag" type="MRPP_AddBuildTags">
+        <parameters>
+          <param name="system.password" value="zxx5a5952cabc81c68e" />
+          <param name="system.tags" value="%example.name%" />
+          <param name="system.username" value="apache" />
+          <param name="teamcity.step.mode" value="default" />
+        </parameters>
+      </runner>
       <runner id="RUNNER_2" name="Examples" type="Maven2">
         <parameters>
           <param name="goals" value="verify" />
@@ -23,14 +31,6 @@
           <param name="teamcity.step.mode" value="default" />
           <param name="userSettingsPath" value="" />
           <param name="userSettingsSelection" value="userSettingsSelection:default" />
-        </parameters>
-      </runner>
-      <runner id="RUNNER_8" name="Tag" type="MRPP_AddBuildTags">
-        <parameters>
-          <param name="system.password" value="zxx5a5952cabc81c68e" />
-          <param name="system.tags" value="%example.name%" />
-          <param name="system.username" value="apache" />
-          <param name="teamcity.step.mode" value="default" />
         </parameters>
       </runner>
     </build-runners>
