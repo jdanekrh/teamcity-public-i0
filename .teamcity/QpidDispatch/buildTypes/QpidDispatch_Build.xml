@@ -18,7 +18,9 @@ test.sh]]></param>
     <vcs-settings>
       <vcs-entry-ref root-id="QpidDispatch_GitGitApacheOrgQpidDispatchGitRefsHeadsMaster" />
     </vcs-settings>
-    <requirements />
+    <requirements>
+      <equals name="teamcity.agent.name" value="vm-43-179-132-209" />
+    </requirements>
     <build-triggers>
       <build-trigger id="vcsTrigger" type="vcsTrigger">
         <parameters>
