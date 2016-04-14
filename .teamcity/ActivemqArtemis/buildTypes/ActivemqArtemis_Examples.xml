@@ -17,7 +17,9 @@
         </parameters>
       </runner>
     </build-runners>
-    <vcs-settings />
+    <vcs-settings>
+      <vcs-entry-ref root-id="ActivemqArtemis_GitGitApacheOrgActivemqArtemisGitRefsHeadsMaster" />
+    </vcs-settings>
     <requirements />
     <build-triggers>
       <build-trigger id="vcsTrigger" type="vcsTrigger">
