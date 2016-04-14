@@ -8,8 +8,8 @@
       <runner id="RUNNER_9" name="" type="simpleRunner">
         <parameters>
           <param name="script.content"><![CDATA[cd %system.teamcity.build.checkoutDir%
-source config.sh
-test.sh]]></param>
+source ./config.sh
+./test.sh]]></param>
           <param name="teamcity.step.mode" value="default" />
           <param name="use.custom.script" value="true" />
         </parameters>
