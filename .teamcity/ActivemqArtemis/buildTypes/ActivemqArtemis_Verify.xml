@@ -10,9 +10,9 @@
     <build-runners>
       <runner id="RUNNER_8" name="Tag" type="MRPP_AddBuildTags">
         <parameters>
-          <param name="system.password" value="zxx5a5952cabc81c68e" />
+          <param name="system.password" value="zxxc15b9c8207cebd59502b73ac5df3b70d4043a8d877c41b294423ab58cd8f54b9" />
           <param name="system.tags" value="%example.name%" />
-          <param name="system.username" value="apache" />
+          <param name="system.username" value="jdanek" />
           <param name="teamcity.step.mode" value="default" />
         </parameters>
       </runner>
