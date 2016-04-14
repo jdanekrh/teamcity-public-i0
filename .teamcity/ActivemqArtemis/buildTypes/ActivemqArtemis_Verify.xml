@@ -25,6 +25,14 @@
           <param name="userSettingsSelection" value="userSettingsSelection:default" />
         </parameters>
       </runner>
+      <runner id="RUNNER_8" name="Tag" type="MRPP_AddBuildTags">
+        <parameters>
+          <param name="system.password" value="zxx5a5952cabc81c68e" />
+          <param name="system.tags" value="%example.name%" />
+          <param name="system.username" value="apache" />
+          <param name="teamcity.step.mode" value="default" />
+        </parameters>
+      </runner>
     </build-runners>
     <vcs-settings>
       <vcs-entry-ref root-id="ActivemqArtemis_GitGitApacheOrgActivemqArtemisGitRefsHeadsMaster" />
