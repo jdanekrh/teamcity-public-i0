@@ -3,6 +3,9 @@
   <name>Examples</name>
   <description />
   <settings>
+    <disabled-settings>
+      <setting-ref ref="vcsTrigger" />
+    </disabled-settings>
     <parameters />
     <build-runners>
       <runner id="RUNNER_1" name="" type="matrix-build-runner">
